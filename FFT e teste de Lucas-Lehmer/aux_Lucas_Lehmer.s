@@ -1,5 +1,6 @@
-
-/*Funcoes auxiliares para o teste de Lucas-Lehmer*/
+/*
+Funcoes auxiliares para o teste de Lucas-Lehmer
+*/
 
 
 /*
