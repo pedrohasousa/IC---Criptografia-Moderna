@@ -63,7 +63,7 @@ div_resto:
 
 
 /*
-copia de div_resto que guarda o resto em %rax, para retornar o resto para codigo separado em C
+copia de div_resto que guarda o resto em %rax, para retornar apenas o resto para codigo separado em C
 */
 .globl resto
 .type resto, @function
