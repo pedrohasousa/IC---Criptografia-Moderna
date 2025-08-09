@@ -1,3 +1,6 @@
+/*
+soma em Z_p
+*/
 .globl summod
 .type summod, @function
 /*%rdi + %rsi mod(%rdx)*/
@@ -19,7 +22,9 @@ summod:
     ret
 
 
-
+/*
+subtracao em Z_p
+*/
 .globl submod
 .type submod, @function
 /*%rdi - %rsi mod(%rdx)*/
@@ -38,7 +43,9 @@ submod:
 
 
 
-
+/*
+multiplicacao em Z_p
+*/
 .globl multmod
 .type multmod, @function
 
@@ -66,7 +73,9 @@ multmod:
 
 
 
-
+/*
+inverso multiplicativo em Z_p
+*/
 .globl invmod
 .type invmod, @function
 
@@ -123,7 +132,9 @@ invmod:
 
  
 
-
+/*
+potenciacao em Z_p
+*/
 .globl   powermod
 .type    powermod, @function
 
