@@ -1,10 +1,11 @@
 /*
-Usa as funções do arquivo biblioteca_F_2.s para fazer contas com polinomios de F_2.
+Usa as funções do arquivo biblioteca_Fp.s para fazer contas com polinomios de Fp (p = 2^n).
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+// print de números em base 2
 void print_bin(unsigned long a){
   for(int i = 63; i; i--){
     printf("%li",(a>>i)&1);
