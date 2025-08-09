@@ -2,7 +2,7 @@
 
   - **Título**: Criptografia Moderna
   - **Plano de trabalho**: Inrodução à criptografia
-  - **Orientador**: Evilson Vieira
+  - **Orientador**: Prof. Dr. Evilson Vieira
   - **Período**: 01\09\2024 a 01\09\2025
 
   Os arquivos aqui presentes são os códigos escritos e utilizados no projeto.
