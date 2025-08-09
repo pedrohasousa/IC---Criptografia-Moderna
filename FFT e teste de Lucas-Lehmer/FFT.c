@@ -1,5 +1,5 @@
 // Implementacao do algoritmo FFT para multiplicar inteiros
-// compilar com biblioteca_Z_p.s
+// compilar com biblioteca_Zp.s
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -56,37 +56,6 @@ void FFT(unsigned long *P, unsigned long *R, unsigned long w, unsigned long n, u
 }
 
 
-
-//FFT errada
-//P deve ter 2^n coeficientes
-//p e o primo do Zp usado
-// void FFT(unsigned long *P, unsigned long *R, unsigned long w, unsigned long n, unsigned long p){
-//   if(n == 0){
-//     R[0] = P[0];
-//     return;
-//   }
-//   else{
-//     int m;
-//     m = powermod(2, n-1, p);
-//     FFT(P, R, powermod(w,2,p), n-1, p);
-//     FFT(P+m, R+m, powermod(w,2,p), n-1, p);
-//     unsigned long k;
-//     for(int j = 0; j < m; j++){
-//       k = powermod(w, j, p);
-//       k = multmod(k, R[j+m], p);
-//       //printf("R[%i] + k[%i] = %lu + %lu\n", j, j, R[j], k);
-//       // printf("j e j+im  %i %i\n", j, j + i*m);
-//       R[j+m] = submod(R[j], k, p);
-//       R[j] = summod(R[j], k, p);
-//     }
-//     printf("n = %lu\n", n);
-//     for(int j = 0; j < 2*m; j++){
-//       printf("%lx ", R[j]);
-//     }
-//     printf("\n");
-//     return;
-//   }
-// }
 
 
 
