@@ -1,10 +1,10 @@
 // Implementacao do teste de primalidade de Lucas-Lehmer
-// compilar junto com biblioteca_Z_p.s e aux_Lucas_Lehmer.s
+// compilar junto com biblioteca_Zp.s e aux_Lucas_Lehmer.s
 
 #include <stdio.h>
 #include <stdlib.h>
 
-// Funcoes da biblioteca_Z_p
+// Funcoes da biblioteca_Zp
 unsigned long summod(unsigned long a, unsigned long b, unsigned long m);
 unsigned long submod(unsigned long a, unsigned long b, unsigned long m);
 unsigned long multmod(unsigned long a, unsigned long b, unsigned long m);
@@ -158,30 +158,6 @@ int Lucas_Lehmer(unsigned long p, unsigned long d){
 void main(){
   unsigned long p = 44497;  //44497
   unsigned long d = 20;
-  
-  //Testes
-  // unsigned long a, m, q, w, quoc, *S, *R;
-  // q = 0xffffffff00000001;
-  // m = profundidade(p, d);
-  // a = powermod(2, m, q);
-  // S = malloc(a*sizeof(long));
-  // R = malloc(a*sizeof(long));
-  // w = 1753635133440165772;   //raiz da unidade de ordem 2^32 em Zq
-  // w = powermod(w, powermod(2,32-m,q), q); //agora w tem ordem 2^m
-  // for(int i = 0; i < a; i++){
-  //   R[i] = S[i] = 0;
-  // }
-  // S[0] = 0x00010; //20 bits
-  // S[1] = 0x0;
-  // S[2] = 0x0;
-  // printf("%lu\n", modMp(S, p, d));
-  // modMp(S, p, d);
-  // printf("%lu\n", sub2(S, d));
-  // sub2(S, d);
-  // for(int i = 0; i < a; i++){
-  //   printf("%lx ", S[i]);
-  // }
-  // printf("\n");
 
   printf("%i\n", Lucas_Lehmer(p, d));
 }
